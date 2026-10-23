@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OG Card Preview Local: Check Social Cards Before You Publish</title>
+<meta name="description" content="Preview how a page will look on X, LinkedIn, Facebook and WhatsApp by dropping in its HTML file and image, before it is live.">
+<meta name="keywords" content="open graph checker before publishing, social preview checker localhost, OG image validator 1200x630, Twitter card preview tool">
+<meta name="author" content="Amir Hussain">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aamirtechs.github.io/og-card-preview-local/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OG Card Preview Local: Check Social Cards Before You Publish">
+<meta property="og:description" content="Preview how a page will look on X, LinkedIn, Facebook and WhatsApp by dropping in its HTML file and image, before it is live.">
+<meta property="og:url" content="https://aamirtechs.github.io/og-card-preview-local/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OG Card Preview Local">
+<meta name="twitter:description" content="Preview how a page will look on X, LinkedIn, Facebook and WhatsApp by dropping in its HTML file and image, before it is live.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "OG Card Preview Local", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Amir Hussain", "url": "https://aamirtechs.com"}, "url": "https://aamirtechs.github.io/og-card-preview-local/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>:root{--navy:#0b1f3a;--navy2:#122c50;--gold:#d4a72c;--ink:#16233a;--muted:#5a6a84;--line:#e3e9f2;--bg:#f6f8fb;--card:#ffffff}*{box-sizing:border-box}body{margin:0;font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink)}header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:44px 20px 34px;text-align:center}header h1{font-family:Sora,sans-serif;font-size:2.2rem;margin:0 0 10px}header h1 span{color:var(--gold)}header p{max-width:720px;margin:0 auto 16px;opacity:.92}.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.stats span{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:5px 14px;font-size:.85rem}main{max-width:1020px;margin:0 auto;padding:24px 16px 40px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 6px 24px rgba(11,31,58,.06)}label{font-weight:700;display:block;margin:14px 0 6px}input[type=text],input[type=number],input[type=file],input[type=color],select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;font:inherit}.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.btn-run{background:var(--gold);color:var(--navy);border:0;border-radius:10px;padding:12px 22px;cursor:pointer;font:inherit;font-weight:800;margin-top:16px}.btn-sec{background:var(--navy);color:#fff;border:0;border-radius:10px;padding:10px 18px;cursor:pointer;font:inherit;margin:8px 6px 0 0}.privacy{color:var(--muted);font-size:.9rem;margin-top:10px}table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.92rem}td,th{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}section.features{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin-top:20px}footer{background:var(--navy);color:#dbe4f0;text-align:center;padding:26px 16px;font-size:.92rem}footer a{color:var(--gold)}.msg{margin-top:12px;white-space:pre-wrap;font-weight:700}pre.out{white-space:pre-wrap;word-break:break-word;background:#f2f5fa;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:.88rem}.pass{color:#137333;font-weight:700}.warn{color:#9a6b00;font-weight:700}.fail{color:#b3261e;font-weight:700}.swatch{display:inline-block;width:20px;height:20px;border:1px solid var(--line);border-radius:5px;vertical-align:middle;margin-right:6px}.socialcard{border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:12px;background:#fff}.socialcard img{max-width:100%;border-radius:8px;margin-top:8px}code{background:#f2f5fa;padding:1px 5px;border-radius:5px}</style>
+</head>
+<body>
+<header>
+<h1>OG Card Preview <span>Local</span></h1>
+<p>Preview how a page will look on X, LinkedIn, Facebook and WhatsApp by dropping in its HTML file and image, before it is live, even on localhost.</p>
+<div class="stats"><span>Free</span><span>100% in your browser</span><span>No sign-up</span></div>
+</header>
+<main>
+<div class="card">
+<label for="htmlfile">Page HTML file (optional, or paste below)</label>
+<input type="file" id="htmlfile" accept=".html,.htm,text/html">
+<label for="html">HTML or head markup</label>
+<textarea id="html" rows="7" placeholder="Paste the page HTML or just its head section"></textarea>
+<label for="imgfile">OG image file (optional, checked locally for real pixels and file size)</label>
+<input type="file" id="imgfile" accept="image/*">
+<button class="btn-sec" id="sample">Load sample page</button>
+<p class="privacy">Runs 100% in your browser. Your files never leave this device. Nothing is fetched, so localhost and staging pages work.</p>
+<button class="btn-run" id="run">Preview cards and run checks</button>
+<button class="btn-sec" id="copyBlock" disabled>Copy corrected meta block</button>
+<div class="msg" id="msg" role="status"></div>
+<div id="results"></div>
+<label for="block">Corrected meta block</label>
+<textarea id="block" rows="8" readonly placeholder="The corrected meta tags will appear here"></textarea>
+</div>
+<section class="features">
+<h2>How it works</h2>
+<ul>
+<li>Drop an .html file or paste the head markup. No fetching happens, so staging and localhost pages work.</li>
+<li>Drop the og:image locally to check its real pixel size against 1200x630 and its file size against the 5 MB limit.</li>
+<li>Previews for X large and small cards, Facebook, LinkedIn, WhatsApp and Discord use the actual title and description truncation lengths.</li>
+<li>Checks flag missing or empty og tags, relative image URLs crawlers cannot resolve, and title or description truncation.</li>
+<li>Generate a corrected meta tag block with absolute image URLs, ready to copy into your head.</li>
+</ul>
+</section>
+</main>
+<footer>
+<p>Built by Amir Hussain, operations manager and founder of <a href="https://aamirtechs.com" target="_blank" rel="noopener">AamirTechs: operations, customer support and e-commerce services</a>.</p>
+<p><a href="https://github.com/aamirtechs" target="_blank" rel="noopener">More open source tools on GitHub</a></p>
+</footer>
+<script src="src/logic.js"></script>
+<script>
+const $=(id)=>document.getElementById(id);let imgInfo=null,imgDataUrl="";
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+$("htmlfile").addEventListener("change",async(e)=>{if(e.target.files[0])$("html").value=await e.target.files[0].text();});
+$("imgfile").addEventListener("change",(e)=>{const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);const im=new Image();im.onload=()=>{imgInfo={width:im.naturalWidth,height:im.naturalHeight,sizeBytes:f.size,url:f.name};imgDataUrl=url;$("msg").textContent="Image loaded: "+im.naturalWidth+"x"+im.naturalHeight+", "+Math.round(f.size/1024)+" KB.";};im.src=url;});
+$("sample").addEventListener("click",()=>{$("html").value='<html><head>\n<title>My Launch Page</title>\n<meta name="description" content="A short and useful description of the launch page.">\n<meta property="og:title" content="My Launch Page">\n<meta property="og:image" content="/images/card.png">\n<meta property="og:url" content="https://example.com/launch">\n</head><body>Hi</body></html>';});
+$("run").addEventListener("click",()=>{
+ const meta=OgCardPreviewLocal.extractMeta($("html").value);
+ if(!meta.title&&!meta.og.title){$("msg").textContent="No title or meta tags found. Paste a full page or its head section.";return;}
+ const r=OgCardPreviewLocal.runChecks(meta,imgInfo);
+ const cards=OgCardPreviewLocal.cardPreviews(meta);
+ let h="<h3>Checks: "+r.passCount+" of "+r.total+" passing</h3><table><tr><th>Check</th><th>Result</th><th>Detail</th></tr>"+r.checks.map(c=>"<tr><td>"+esc(c.id)+"</td><td class='"+c.level+"'>"+c.level+"</td><td>"+esc(c.message)+"</td></tr>").join("")+"</table>";
+ h+="<h3>Card previews</h3>"+cards.map(c=>'<div class="socialcard"><strong>'+esc(c.network)+'</strong>'+(imgDataUrl?'<img src="'+imgDataUrl+'" alt="">':"")+"<p style='font-weight:700;margin:8px 0 2px'>"+esc(c.title)+"</p><p style='margin:2px 0;color:var(--muted)'>"+esc(c.description)+"</p><p style='margin:2px 0;font-size:.82rem;color:var(--muted)'>"+esc(c.footer)+"</p></div>").join("");
+ $("results").innerHTML=h;$("block").value=OgCardPreviewLocal.generateMetaBlock(meta);$("copyBlock").disabled=false;
+ $("msg").textContent="Found title: "+(meta.og.title||meta.title||"none")+". "+r.passCount+" of "+r.total+" checks pass.";
+});
+$("copyBlock").addEventListener("click",async()=>{try{await navigator.clipboard.writeText($("block").value);$("msg").textContent="Corrected meta block copied.";}catch(e){$("block").select();document.execCommand("copy");}});
+</script>
+</body>
+</html>
